@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<dict>
+		<key>abscissa</key>
+		<real>1</real>
+		<key>ordinate</key>
+		<real>2.0499999999999998</real>
+	</dict>
+	<dict>
+		<key>abscissa</key>
+		<real>2.0100000000000002</real>
+		<key>ordinate</key>
+		<real>4</real>
+	</dict>
+	<dict>
+		<key>abscissa</key>
+		<real>3</real>
+		<key>ordinate</key>
+		<real>5.9900000000000002</real>
+	</dict>
+	<dict>
+		<key>abscissa</key>
+		<real>4</real>
+		<key>ordinate</key>
+		<real>8.0999999999999996</real>
+	</dict>
+	<dict>
+		<key>abscissa</key>
+		<real>5</real>
+		<key>ordinate</key>
+		<real>10</real>
+	</dict>
+</array>
+</plist>
