@@ -11,11 +11,16 @@
 
 @implementation AppDelegate
 
-@synthesize slopeField, interceptField, correlationField, computeButton;
-@synthesize dataPoints;
+@synthesize dataPoints, slopeField, interceptField, correlationField, currIntercept, currSlope;
+@synthesize computeButton, showGraphButton, graphWindow;
 
 - (id) init {
     self = [super init];
+    if (self) {
+        // Allocate and initialize our model
+        statEngine = [[PointStat alloc] init];
+        [statEngine setDelegate: [[NSApplication sharedApplication] delegate]];
+    }
 	return self;
 }
 
@@ -24,8 +29,18 @@
     // Insert code here to initialize your application
 }
 
+- (IBAction)showGraphWindow:(id)sender {
+    if (!graphWindow) {
+        [NSBundle loadNibNamed:@"Graph" owner:self];
+    }
+    
+    [graphWindow makeKeyAndOrderFront:sender]; // Make the graph window visible.
+}
+
 - (IBAction)computeWithLibrary:(id)sender {
     if ([[dataPoints arrangedObjects] count] > 1) {
+        
+        [showGraphButton setEnabled:YES];
         
         void *reg = RGCreate();
         
@@ -38,6 +53,8 @@
         }
         
         if (RGCount(reg) > 1) {
+            currSlope = [NSNumber numberWithDouble:RGSlope(reg)];
+            currIntercept = [NSNumber numberWithDouble:RGIntercept(reg)];
             [slopeField setStringValue:[NSString stringWithFormat:@"%f", RGSlope(reg)]];
             [interceptField setStringValue:[NSString stringWithFormat:@"%f", RGIntercept(reg)]];
             [correlationField setStringValue:[NSString stringWithFormat:@"%f", RGCorrelation(reg)]];

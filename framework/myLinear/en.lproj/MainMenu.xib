@@ -1721,7 +1721,7 @@
 							<string key="NSFrame">{{207, 217}, {253, 82}}</string>
 							<reference key="NSSuperview" ref="439893737"/>
 							<reference key="NSWindow"/>
-							<reference key="NSNextKeyView"/>
+							<reference key="NSNextKeyView" ref="69857844"/>
 							<string key="NSReuseIdentifierKey">_NS:9</string>
 							<bool key="NSEnabled">YES</bool>
 							<bool key="NSAllowsLogicalLayoutDirection">NO</bool>
@@ -1806,6 +1806,30 @@
 							<reference key="NSCellBackgroundColor" ref="458342678"/>
 							<reference key="NSFont" ref="128478050"/>
 							<bool key="NSAutorecalculatesCellSize">YES</bool>
+						</object>
+						<object class="NSButton" id="69857844">
+							<reference key="NSNextResponder" ref="439893737"/>
+							<int key="NSvFlags">268</int>
+							<string key="NSFrame">{{350, 169}, {116, 32}}</string>
+							<reference key="NSSuperview" ref="439893737"/>
+							<reference key="NSWindow"/>
+							<string key="NSReuseIdentifierKey">_NS:9</string>
+							<bool key="NSEnabled">YES</bool>
+							<object class="NSButtonCell" key="NSCell" id="466488742">
+								<int key="NSCellFlags">603979776</int>
+								<int key="NSCellFlags2">134217728</int>
+								<string key="NSContents">Show Graph</string>
+								<reference key="NSSupport" ref="128478050"/>
+								<string key="NSCellIdentifier">_NS:9</string>
+								<reference key="NSControlView" ref="69857844"/>
+								<int key="NSButtonFlags">-2038284288</int>
+								<int key="NSButtonFlags2">129</int>
+								<string key="NSAlternateContents"/>
+								<string key="NSKeyEquivalent"/>
+								<int key="NSPeriodicDelay">200</int>
+								<int key="NSPeriodicInterval">25</int>
+							</object>
+							<bool key="NSAllowsLogicalLayoutDirection">NO</bool>
 						</object>
 					</array>
 					<string key="NSFrameSize">{480, 360}</string>
@@ -2582,6 +2606,22 @@
 					<int key="connectionID">839</int>
 				</object>
 				<object class="IBConnectionRecord">
+					<object class="IBOutletConnection" key="connection">
+						<string key="label">showGraphButton</string>
+						<reference key="source" ref="976324537"/>
+						<reference key="destination" ref="69857844"/>
+					</object>
+					<int key="connectionID">842</int>
+				</object>
+				<object class="IBConnectionRecord">
+					<object class="IBActionConnection" key="connection">
+						<string key="label">showGraphWindow:</string>
+						<reference key="source" ref="976324537"/>
+						<reference key="destination" ref="69857844"/>
+					</object>
+					<int key="connectionID">843</int>
+				</object>
+				<object class="IBConnectionRecord">
 					<object class="IBBindingConnection" key="connection">
 						<string key="label">enabled: arrangedObjects.@count</string>
 						<reference key="source" ref="457454597"/>
@@ -3217,6 +3257,7 @@
 							<reference ref="933188051"/>
 							<reference ref="496610527"/>
 							<reference ref="457454597"/>
+							<reference ref="69857844"/>
 						</array>
 						<reference key="parent" ref="972006081"/>
 					</object>
@@ -3856,6 +3897,19 @@
 						<reference key="object" ref="416427036"/>
 						<reference key="parent" ref="720053764"/>
 					</object>
+					<object class="IBObjectRecord">
+						<int key="objectID">840</int>
+						<reference key="object" ref="69857844"/>
+						<array class="NSMutableArray" key="children">
+							<reference ref="466488742"/>
+						</array>
+						<reference key="parent" ref="439893737"/>
+					</object>
+					<object class="IBObjectRecord">
+						<int key="objectID">841</int>
+						<reference key="object" ref="466488742"/>
+						<reference key="parent" ref="69857844"/>
+					</object>
 				</array>
 			</object>
 			<dictionary class="NSMutableDictionary" key="flattenedProperties">
@@ -4042,13 +4096,15 @@
 				<string key="83.IBPluginDependency">com.apple.InterfaceBuilder.CocoaPlugin</string>
 				<string key="835.IBPluginDependency">com.apple.InterfaceBuilder.CocoaPlugin</string>
 				<string key="837.IBPluginDependency">com.apple.InterfaceBuilder.CocoaPlugin</string>
+				<string key="840.IBPluginDependency">com.apple.InterfaceBuilder.CocoaPlugin</string>
+				<string key="841.IBPluginDependency">com.apple.InterfaceBuilder.CocoaPlugin</string>
 				<string key="92.IBPluginDependency">com.apple.InterfaceBuilder.CocoaPlugin</string>
 			</dictionary>
 			<dictionary class="NSMutableDictionary" key="unlocalizedProperties"/>
 			<nil key="activeLocalization"/>
 			<dictionary class="NSMutableDictionary" key="localizations"/>
 			<nil key="sourceID"/>
-			<int key="maxID">839</int>
+			<int key="maxID">843</int>
 		</object>
 		<object class="IBClassDescriber" key="IBDocument.Classes">
 			<array class="NSMutableArray" key="referencedPartialClassDescriptions">
@@ -4057,17 +4113,13 @@
 					<string key="superclassName">NSObject</string>
 					<dictionary class="NSMutableDictionary" key="actions">
 						<string key="computeWithLibrary:">id</string>
-						<string key="computeWithLinrg:">id</string>
 						<string key="loadPlist:">id</string>
 						<string key="saveAsPList:">id</string>
+						<string key="showGraphWindow:">id</string>
 					</dictionary>
 					<dictionary class="NSMutableDictionary" key="actionInfosByName">
 						<object class="IBActionInfo" key="computeWithLibrary:">
 							<string key="name">computeWithLibrary:</string>
-							<string key="candidateClassName">id</string>
-						</object>
-						<object class="IBActionInfo" key="computeWithLinrg:">
-							<string key="name">computeWithLinrg:</string>
 							<string key="candidateClassName">id</string>
 						</object>
 						<object class="IBActionInfo" key="loadPlist:">
@@ -4078,12 +4130,18 @@
 							<string key="name">saveAsPList:</string>
 							<string key="candidateClassName">id</string>
 						</object>
+						<object class="IBActionInfo" key="showGraphWindow:">
+							<string key="name">showGraphWindow:</string>
+							<string key="candidateClassName">id</string>
+						</object>
 					</dictionary>
 					<dictionary class="NSMutableDictionary" key="outlets">
 						<string key="computeButton">NSButton</string>
 						<string key="correlationField">NSFormCell</string>
 						<string key="dataPoints">NSArrayController</string>
+						<string key="graphWindow">NSWindow</string>
 						<string key="interceptField">NSFormCell</string>
+						<string key="showGraphButton">NSButton</string>
 						<string key="slopeField">NSFormCell</string>
 						<string key="window">NSWindow</string>
 					</dictionary>
@@ -4100,9 +4158,17 @@
 							<string key="name">dataPoints</string>
 							<string key="candidateClassName">NSArrayController</string>
 						</object>
+						<object class="IBToOneOutletInfo" key="graphWindow">
+							<string key="name">graphWindow</string>
+							<string key="candidateClassName">NSWindow</string>
+						</object>
 						<object class="IBToOneOutletInfo" key="interceptField">
 							<string key="name">interceptField</string>
 							<string key="candidateClassName">NSFormCell</string>
+						</object>
+						<object class="IBToOneOutletInfo" key="showGraphButton">
+							<string key="name">showGraphButton</string>
+							<string key="candidateClassName">NSButton</string>
 						</object>
 						<object class="IBToOneOutletInfo" key="slopeField">
 							<string key="name">slopeField</string>

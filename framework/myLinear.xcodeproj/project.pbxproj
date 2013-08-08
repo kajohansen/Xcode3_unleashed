@@ -15,10 +15,19 @@
 		22501928167A46C20079C46A /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 22501926167A46C20079C46A /* MainMenu.xib */; };
 		22501930167A48720079C46A /* DataPoints.m in Sources */ = {isa = PBXBuildFile; fileRef = 2250192F167A48720079C46A /* DataPoints.m */; };
 		22501939167A4B850079C46A /* linrg in Resources */ = {isa = PBXBuildFile; fileRef = 22501938167A4B850079C46A /* linrg */; };
+		22694FAF173151750047C5D6 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 22501911167A46C20079C46A /* Cocoa.framework */; };
+		22694FB5173151750047C5D6 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 22694FB3173151750047C5D6 /* InfoPlist.strings */; };
+		22694FB9173151750047C5D6 /* Statistics.m in Sources */ = {isa = PBXBuildFile; fileRef = 22694FB8173151750047C5D6 /* Statistics.m */; };
+		22694FBD173152910047C5D6 /* LinearGraph.m in Sources */ = {isa = PBXBuildFile; fileRef = 22C08F1E173124D200F8D1D2 /* LinearGraph.m */; };
+		22694FBE173152C80047C5D6 /* LinearGraph.h in Headers */ = {isa = PBXBuildFile; fileRef = 22C08F1D173124D200F8D1D2 /* LinearGraph.h */; };
+		22694FC1173153470047C5D6 /* PointStat.h in Headers */ = {isa = PBXBuildFile; fileRef = 22694FBF173153470047C5D6 /* PointStat.h */; };
+		22694FC2173153470047C5D6 /* PointStat.m in Sources */ = {isa = PBXBuildFile; fileRef = 22694FC0173153470047C5D6 /* PointStat.m */; };
+		22694FC31731567B0047C5D6 /* Statistics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 22694FAE173151750047C5D6 /* Statistics.framework */; };
 		22C08F121731098700F8D1D2 /* libRegression.h in Headers */ = {isa = PBXBuildFile; fileRef = 22C08F111731098700F8D1D2 /* libRegression.h */; };
 		22C08F141731099E00F8D1D2 /* libRegression.c in Sources */ = {isa = PBXBuildFile; fileRef = 22C08F131731099E00F8D1D2 /* libRegression.c */; };
 		22C08F16173109B700F8D1D2 /* libRegressionSums.h in Headers */ = {isa = PBXBuildFile; fileRef = 22C08F15173109B700F8D1D2 /* libRegressionSums.h */; };
 		22C08F1717310E7C00F8D1D2 /* libRegression.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 22C08F0D1731093D00F8D1D2 /* libRegression.a */; };
+		22C08F1C173120FF00F8D1D2 /* Graph.xib in Resources */ = {isa = PBXBuildFile; fileRef = 22C08F1B173120FF00F8D1D2 /* Graph.xib */; };
 		22E45BEE172FD1BB00C7F09E /* PointCountTransformer.m in Sources */ = {isa = PBXBuildFile; fileRef = 22E45BED172FD1BB00C7F09E /* PointCountTransformer.m */; };
 /* End PBXBuildFile section */
 
@@ -39,6 +48,14 @@
 		2250192F167A48720079C46A /* DataPoints.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DataPoints.m; sourceTree = "<group>"; };
 		22501938167A4B850079C46A /* linrg */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.executable"; path = linrg; sourceTree = "<group>"; };
 		2250193E167A5A610079C46A /* DataPoints.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DataPoints.h; sourceTree = "<group>"; };
+		22694FAE173151750047C5D6 /* Statistics.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Statistics.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		22694FB2173151750047C5D6 /* Statistics-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Statistics-Info.plist"; sourceTree = "<group>"; };
+		22694FB4173151750047C5D6 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		22694FB6173151750047C5D6 /* Statistics-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Statistics-Prefix.pch"; sourceTree = "<group>"; };
+		22694FB7173151750047C5D6 /* Statistics.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Statistics.h; sourceTree = "<group>"; };
+		22694FB8173151750047C5D6 /* Statistics.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Statistics.m; sourceTree = "<group>"; };
+		22694FBF173153470047C5D6 /* PointStat.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PointStat.h; sourceTree = "<group>"; };
+		22694FC0173153470047C5D6 /* PointStat.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PointStat.m; sourceTree = "<group>"; };
 		22C08EE1173102C500F8D1D2 /* CoreFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreFoundation.framework; path = System/Library/Frameworks/CoreFoundation.framework; sourceTree = SDKROOT; };
 		22C08EE5173102C500F8D1D2 /* libRegression-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "libRegression-Info.plist"; sourceTree = "<group>"; };
 		22C08EE7173102C500F8D1D2 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
@@ -52,6 +69,9 @@
 		22C08F111731098700F8D1D2 /* libRegression.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = libRegression.h; sourceTree = "<group>"; };
 		22C08F131731099E00F8D1D2 /* libRegression.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = libRegression.c; sourceTree = "<group>"; };
 		22C08F15173109B700F8D1D2 /* libRegressionSums.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = libRegressionSums.h; sourceTree = "<group>"; };
+		22C08F1B173120FF00F8D1D2 /* Graph.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = Graph.xib; sourceTree = "<group>"; };
+		22C08F1D173124D200F8D1D2 /* LinearGraph.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LinearGraph.h; sourceTree = "<group>"; };
+		22C08F1E173124D200F8D1D2 /* LinearGraph.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LinearGraph.m; sourceTree = "<group>"; };
 		22E45BEC172FD1BB00C7F09E /* PointCountTransformer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PointCountTransformer.h; sourceTree = "<group>"; };
 		22E45BED172FD1BB00C7F09E /* PointCountTransformer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PointCountTransformer.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -61,8 +81,17 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				22694FC31731567B0047C5D6 /* Statistics.framework in Frameworks */,
 				22C08F1717310E7C00F8D1D2 /* libRegression.a in Frameworks */,
 				22501912167A46C20079C46A /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		22694FAA173151750047C5D6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				22694FAF173151750047C5D6 /* Cocoa.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -82,6 +111,7 @@
 				22C08EF31731036100F8D1D2 /* myRegression */,
 				22501917167A46C20079C46A /* myLinear */,
 				22C08EE3173102C500F8D1D2 /* libRegression */,
+				22694FB0173151750047C5D6 /* Statistics */,
 				22501910167A46C20079C46A /* Frameworks */,
 				2250190E167A46C20079C46A /* Products */,
 			);
@@ -92,6 +122,7 @@
 			children = (
 				2250190D167A46C20079C46A /* myLinear.app */,
 				22C08F0D1731093D00F8D1D2 /* libRegression.a */,
+				22694FAE173151750047C5D6 /* Statistics.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -122,9 +153,12 @@
 				22C08F181731137000F8D1D2 /* utils */,
 				22501923167A46C20079C46A /* AppDelegate.h */,
 				22501924167A46C20079C46A /* AppDelegate.m */,
+				22C08F1D173124D200F8D1D2 /* LinearGraph.h */,
+				22C08F1E173124D200F8D1D2 /* LinearGraph.m */,
 				2250193E167A5A610079C46A /* DataPoints.h */,
 				2250192F167A48720079C46A /* DataPoints.m */,
 				22501926167A46C20079C46A /* MainMenu.xib */,
+				22C08F1B173120FF00F8D1D2 /* Graph.xib */,
 				22501918167A46C20079C46A /* Supporting Files */,
 			);
 			path = myLinear;
@@ -139,6 +173,28 @@
 				2250191D167A46C20079C46A /* main.m */,
 				2250191F167A46C20079C46A /* myLinear-Prefix.pch */,
 				22501920167A46C20079C46A /* Credits.rtf */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		22694FB0173151750047C5D6 /* Statistics */ = {
+			isa = PBXGroup;
+			children = (
+				22694FB7173151750047C5D6 /* Statistics.h */,
+				22694FB8173151750047C5D6 /* Statistics.m */,
+				22694FBF173153470047C5D6 /* PointStat.h */,
+				22694FC0173153470047C5D6 /* PointStat.m */,
+				22694FB1173151750047C5D6 /* Supporting Files */,
+			);
+			path = Statistics;
+			sourceTree = "<group>";
+		};
+		22694FB1173151750047C5D6 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				22694FB2173151750047C5D6 /* Statistics-Info.plist */,
+				22694FB3173151750047C5D6 /* InfoPlist.strings */,
+				22694FB6173151750047C5D6 /* Statistics-Prefix.pch */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -188,6 +244,15 @@
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
+		22694FAB173151750047C5D6 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				22694FBE173152C80047C5D6 /* LinearGraph.h in Headers */,
+				22694FC1173153470047C5D6 /* PointStat.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		22C08F0B1731093D00F8D1D2 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
@@ -217,6 +282,24 @@
 			productReference = 2250190D167A46C20079C46A /* myLinear.app */;
 			productType = "com.apple.product-type.application";
 		};
+		22694FAD173151750047C5D6 /* Statistics */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 22694FBC173151750047C5D6 /* Build configuration list for PBXNativeTarget "Statistics" */;
+			buildPhases = (
+				22694FA9173151750047C5D6 /* Sources */,
+				22694FAA173151750047C5D6 /* Frameworks */,
+				22694FAB173151750047C5D6 /* Headers */,
+				22694FAC173151750047C5D6 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Statistics;
+			productName = Statistics;
+			productReference = 22694FAE173151750047C5D6 /* Statistics.framework */;
+			productType = "com.apple.product-type.framework";
+		};
 		22C08F0C1731093D00F8D1D2 /* Regression */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 22C08F0E1731093D00F8D1D2 /* Build configuration list for PBXNativeTarget "Regression" */;
@@ -240,7 +323,7 @@
 		22501904167A46C20079C46A /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0450;
+				LastUpgradeCheck = 0460;
 				ORGANIZATIONNAME = KAjohansen;
 			};
 			buildConfigurationList = 22501907167A46C20079C46A /* Build configuration list for PBXProject "myLinear" */;
@@ -257,6 +340,7 @@
 			targets = (
 				2250190C167A46C20079C46A /* myLinear */,
 				22C08F0C1731093D00F8D1D2 /* Regression */,
+				22694FAD173151750047C5D6 /* Statistics */,
 			);
 		};
 /* End PBXProject section */
@@ -270,6 +354,15 @@
 				22501922167A46C20079C46A /* Credits.rtf in Resources */,
 				22501928167A46C20079C46A /* MainMenu.xib in Resources */,
 				22501939167A4B850079C46A /* linrg in Resources */,
+				22C08F1C173120FF00F8D1D2 /* Graph.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		22694FAC173151750047C5D6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				22694FB5173151750047C5D6 /* InfoPlist.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -284,6 +377,16 @@
 				22501925167A46C20079C46A /* AppDelegate.m in Sources */,
 				22501930167A48720079C46A /* DataPoints.m in Sources */,
 				22E45BEE172FD1BB00C7F09E /* PointCountTransformer.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		22694FA9173151750047C5D6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				22694FBD173152910047C5D6 /* LinearGraph.m in Sources */,
+				22694FB9173151750047C5D6 /* Statistics.m in Sources */,
+				22694FC2173153470047C5D6 /* PointStat.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -320,6 +423,14 @@
 				22501927167A46C20079C46A /* en */,
 			);
 			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+		22694FB3173151750047C5D6 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				22694FB4173151750047C5D6 /* en */,
+			);
+			name = InfoPlist.strings;
 			sourceTree = "<group>";
 		};
 		22C08EE6173102C500F8D1D2 /* InfoPlist.strings */ = {
@@ -410,12 +521,49 @@
 			};
 			name = Release;
 		};
+		22694FBA173151750047C5D6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				COMBINE_HIDPI_IMAGES = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				FRAMEWORK_VERSION = A;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Statistics/Statistics-Prefix.pch";
+				INFOPLIST_FILE = "Statistics/Statistics-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = framework;
+			};
+			name = Debug;
+		};
+		22694FBB173151750047C5D6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				COMBINE_HIDPI_IMAGES = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				FRAMEWORK_VERSION = A;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Statistics/Statistics-Prefix.pch";
+				INFOPLIST_FILE = "Statistics/Statistics-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = framework;
+			};
+			name = Release;
+		};
 		22C08F0F1731093D00F8D1D2 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				COMBINE_HIDPI_IMAGES = YES;
 				EXECUTABLE_PREFIX = lib;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -427,6 +575,7 @@
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				COMBINE_HIDPI_IMAGES = YES;
 				EXECUTABLE_PREFIX = lib;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -453,6 +602,14 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
+		22694FBC173151750047C5D6 /* Build configuration list for PBXNativeTarget "Statistics" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				22694FBA173151750047C5D6 /* Debug */,
+				22694FBB173151750047C5D6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
 		22C08F0E1731093D00F8D1D2 /* Build configuration list for PBXNativeTarget "Regression" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -460,6 +617,7 @@
 				22C08F101731093D00F8D1D2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
