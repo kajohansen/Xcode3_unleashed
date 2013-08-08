@@ -15,6 +15,12 @@
 		22501928167A46C20079C46A /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 22501926167A46C20079C46A /* MainMenu.xib */; };
 		22501930167A48720079C46A /* DataPoints.m in Sources */ = {isa = PBXBuildFile; fileRef = 2250192F167A48720079C46A /* DataPoints.m */; };
 		22501939167A4B850079C46A /* linrg in Resources */ = {isa = PBXBuildFile; fileRef = 22501938167A4B850079C46A /* linrg */; };
+		22C08F121731098700F8D1D2 /* libRegression.h in Headers */ = {isa = PBXBuildFile; fileRef = 22C08F111731098700F8D1D2 /* libRegression.h */; };
+		22C08F141731099E00F8D1D2 /* libRegression.c in Sources */ = {isa = PBXBuildFile; fileRef = 22C08F131731099E00F8D1D2 /* libRegression.c */; };
+		22C08F16173109B700F8D1D2 /* libRegressionSums.h in Headers */ = {isa = PBXBuildFile; fileRef = 22C08F15173109B700F8D1D2 /* libRegressionSums.h */; };
+		22C08F1717310E7C00F8D1D2 /* libRegression.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 22C08F0D1731093D00F8D1D2 /* libRegression.a */; };
+		22C08F1C173120FF00F8D1D2 /* Graph.xib in Resources */ = {isa = PBXBuildFile; fileRef = 22C08F1B173120FF00F8D1D2 /* Graph.xib */; };
+		22C08F1F173124D200F8D1D2 /* LinearGraph.m in Sources */ = {isa = PBXBuildFile; fileRef = 22C08F1E173124D200F8D1D2 /* LinearGraph.m */; };
 		22E45BEE172FD1BB00C7F09E /* PointCountTransformer.m in Sources */ = {isa = PBXBuildFile; fileRef = 22E45BED172FD1BB00C7F09E /* PointCountTransformer.m */; };
 /* End PBXBuildFile section */
 
@@ -35,6 +41,22 @@
 		2250192F167A48720079C46A /* DataPoints.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DataPoints.m; sourceTree = "<group>"; };
 		22501938167A4B850079C46A /* linrg */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.executable"; path = linrg; sourceTree = "<group>"; };
 		2250193E167A5A610079C46A /* DataPoints.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DataPoints.h; sourceTree = "<group>"; };
+		22C08EE1173102C500F8D1D2 /* CoreFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreFoundation.framework; path = System/Library/Frameworks/CoreFoundation.framework; sourceTree = SDKROOT; };
+		22C08EE5173102C500F8D1D2 /* libRegression-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "libRegression-Info.plist"; sourceTree = "<group>"; };
+		22C08EE7173102C500F8D1D2 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		22C08EE8173102C500F8D1D2 /* libRegression-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "libRegression-Prefix.pch"; sourceTree = "<group>"; };
+		22C08EE9173102C500F8D1D2 /* libRegressionProj.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = libRegressionProj.xcconfig; sourceTree = "<group>"; };
+		22C08EEA173102C500F8D1D2 /* libRegressionTarget.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = libRegressionTarget.xcconfig; sourceTree = "<group>"; };
+		22C08EEB173102C500F8D1D2 /* libRegression.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = libRegression.h; sourceTree = "<group>"; };
+		22C08EED173102C500F8D1D2 /* libRegressionPriv.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = libRegressionPriv.h; sourceTree = "<group>"; };
+		22C08EEE173102C500F8D1D2 /* libRegression.cp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = libRegression.cp; sourceTree = "<group>"; };
+		22C08F0D1731093D00F8D1D2 /* libRegression.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libRegression.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		22C08F111731098700F8D1D2 /* libRegression.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = libRegression.h; sourceTree = "<group>"; };
+		22C08F131731099E00F8D1D2 /* libRegression.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = libRegression.c; sourceTree = "<group>"; };
+		22C08F15173109B700F8D1D2 /* libRegressionSums.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = libRegressionSums.h; sourceTree = "<group>"; };
+		22C08F1B173120FF00F8D1D2 /* Graph.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = Graph.xib; sourceTree = "<group>"; };
+		22C08F1D173124D200F8D1D2 /* LinearGraph.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LinearGraph.h; sourceTree = "<group>"; };
+		22C08F1E173124D200F8D1D2 /* LinearGraph.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LinearGraph.m; sourceTree = "<group>"; };
 		22E45BEC172FD1BB00C7F09E /* PointCountTransformer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PointCountTransformer.h; sourceTree = "<group>"; };
 		22E45BED172FD1BB00C7F09E /* PointCountTransformer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PointCountTransformer.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -44,7 +66,15 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				22C08F1717310E7C00F8D1D2 /* libRegression.a in Frameworks */,
 				22501912167A46C20079C46A /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		22C08F0A1731093D00F8D1D2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -54,7 +84,9 @@
 		22501902167A46C20079C46A = {
 			isa = PBXGroup;
 			children = (
+				22C08EF31731036100F8D1D2 /* myRegression */,
 				22501917167A46C20079C46A /* myLinear */,
+				22C08EE3173102C500F8D1D2 /* libRegression */,
 				22501910167A46C20079C46A /* Frameworks */,
 				2250190E167A46C20079C46A /* Products */,
 			);
@@ -64,6 +96,7 @@
 			isa = PBXGroup;
 			children = (
 				2250190D167A46C20079C46A /* myLinear.app */,
+				22C08F0D1731093D00F8D1D2 /* libRegression.a */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -72,6 +105,7 @@
 			isa = PBXGroup;
 			children = (
 				22501911167A46C20079C46A /* Cocoa.framework */,
+				22C08EE1173102C500F8D1D2 /* CoreFoundation.framework */,
 				22501913167A46C20079C46A /* Other Frameworks */,
 			);
 			name = Frameworks;
@@ -90,13 +124,15 @@
 		22501917167A46C20079C46A /* myLinear */ = {
 			isa = PBXGroup;
 			children = (
+				22C08F181731137000F8D1D2 /* utils */,
 				22501923167A46C20079C46A /* AppDelegate.h */,
 				22501924167A46C20079C46A /* AppDelegate.m */,
+				22C08F1D173124D200F8D1D2 /* LinearGraph.h */,
+				22C08F1E173124D200F8D1D2 /* LinearGraph.m */,
 				2250193E167A5A610079C46A /* DataPoints.h */,
 				2250192F167A48720079C46A /* DataPoints.m */,
 				22501926167A46C20079C46A /* MainMenu.xib */,
-				22E45BEC172FD1BB00C7F09E /* PointCountTransformer.h */,
-				22E45BED172FD1BB00C7F09E /* PointCountTransformer.m */,
+				22C08F1B173120FF00F8D1D2 /* Graph.xib */,
 				22501918167A46C20079C46A /* Supporting Files */,
 			);
 			path = myLinear;
@@ -115,7 +151,61 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		22C08EE3173102C500F8D1D2 /* libRegression */ = {
+			isa = PBXGroup;
+			children = (
+				22C08EE9173102C500F8D1D2 /* libRegressionProj.xcconfig */,
+				22C08EEA173102C500F8D1D2 /* libRegressionTarget.xcconfig */,
+				22C08EEB173102C500F8D1D2 /* libRegression.h */,
+				22C08EED173102C500F8D1D2 /* libRegressionPriv.h */,
+				22C08EEE173102C500F8D1D2 /* libRegression.cp */,
+				22C08EE4173102C500F8D1D2 /* Supporting Files */,
+			);
+			path = libRegression;
+			sourceTree = "<group>";
+		};
+		22C08EE4173102C500F8D1D2 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				22C08EE5173102C500F8D1D2 /* libRegression-Info.plist */,
+				22C08EE6173102C500F8D1D2 /* InfoPlist.strings */,
+				22C08EE8173102C500F8D1D2 /* libRegression-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		22C08EF31731036100F8D1D2 /* myRegression */ = {
+			isa = PBXGroup;
+			children = (
+				22C08F111731098700F8D1D2 /* libRegression.h */,
+				22C08F131731099E00F8D1D2 /* libRegression.c */,
+				22C08F15173109B700F8D1D2 /* libRegressionSums.h */,
+			);
+			name = myRegression;
+			sourceTree = "<group>";
+		};
+		22C08F181731137000F8D1D2 /* utils */ = {
+			isa = PBXGroup;
+			children = (
+				22E45BEC172FD1BB00C7F09E /* PointCountTransformer.h */,
+				22E45BED172FD1BB00C7F09E /* PointCountTransformer.m */,
+			);
+			name = utils;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		22C08F0B1731093D00F8D1D2 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				22C08F121731098700F8D1D2 /* libRegression.h in Headers */,
+				22C08F16173109B700F8D1D2 /* libRegressionSums.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
 		2250190C167A46C20079C46A /* myLinear */ = {
@@ -135,13 +225,30 @@
 			productReference = 2250190D167A46C20079C46A /* myLinear.app */;
 			productType = "com.apple.product-type.application";
 		};
+		22C08F0C1731093D00F8D1D2 /* Regression */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 22C08F0E1731093D00F8D1D2 /* Build configuration list for PBXNativeTarget "Regression" */;
+			buildPhases = (
+				22C08F091731093D00F8D1D2 /* Sources */,
+				22C08F0A1731093D00F8D1D2 /* Frameworks */,
+				22C08F0B1731093D00F8D1D2 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Regression;
+			productName = Regression;
+			productReference = 22C08F0D1731093D00F8D1D2 /* libRegression.a */;
+			productType = "com.apple.product-type.library.static";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
 		22501904167A46C20079C46A /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0450;
+				LastUpgradeCheck = 0460;
 				ORGANIZATIONNAME = KAjohansen;
 			};
 			buildConfigurationList = 22501907167A46C20079C46A /* Build configuration list for PBXProject "myLinear" */;
@@ -157,6 +264,7 @@
 			projectRoot = "";
 			targets = (
 				2250190C167A46C20079C46A /* myLinear */,
+				22C08F0C1731093D00F8D1D2 /* Regression */,
 			);
 		};
 /* End PBXProject section */
@@ -170,6 +278,7 @@
 				22501922167A46C20079C46A /* Credits.rtf in Resources */,
 				22501928167A46C20079C46A /* MainMenu.xib in Resources */,
 				22501939167A4B850079C46A /* linrg in Resources */,
+				22C08F1C173120FF00F8D1D2 /* Graph.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -184,6 +293,15 @@
 				22501925167A46C20079C46A /* AppDelegate.m in Sources */,
 				22501930167A48720079C46A /* DataPoints.m in Sources */,
 				22E45BEE172FD1BB00C7F09E /* PointCountTransformer.m in Sources */,
+				22C08F1F173124D200F8D1D2 /* LinearGraph.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		22C08F091731093D00F8D1D2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				22C08F141731099E00F8D1D2 /* libRegression.c in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -212,6 +330,14 @@
 				22501927167A46C20079C46A /* en */,
 			);
 			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+		22C08EE6173102C500F8D1D2 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				22C08EE7173102C500F8D1D2 /* en */,
+			);
+			name = InfoPlist.strings;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -294,6 +420,30 @@
 			};
 			name = Release;
 		};
+		22C08F0F1731093D00F8D1D2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = lib;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		22C08F101731093D00F8D1D2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = lib;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -311,6 +461,15 @@
 			buildConfigurations = (
 				2250192C167A46C20079C46A /* Debug */,
 				2250192D167A46C20079C46A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		22C08F0E1731093D00F8D1D2 /* Build configuration list for PBXNativeTarget "Regression" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				22C08F0F1731093D00F8D1D2 /* Debug */,
+				22C08F101731093D00F8D1D2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

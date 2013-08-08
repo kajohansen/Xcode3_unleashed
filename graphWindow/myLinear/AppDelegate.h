@@ -8,30 +8,27 @@
 
 #import <Cocoa/Cocoa.h>
 #import "DataPoints.h"
+#import "LinearGraph.h"
 
 @interface AppDelegate : NSObject <NSApplicationDelegate>
 
 @property (assign) IBOutlet NSWindow *window;
+@property (unsafe_unretained) IBOutlet NSWindow *graphWindow;
 
 @property (weak) IBOutlet NSButton *computeButton;
+@property (weak) IBOutlet NSButton *showGraphButton;
 @property (weak) IBOutlet NSFormCell *slopeField;
 @property (weak) IBOutlet NSFormCell *interceptField;
 @property (weak) IBOutlet NSFormCell *correlationField;
 @property (weak) IBOutlet NSArrayController *dataPoints;
 
-@property (nonatomic, strong)NSMutableArray *dataPointsArray;
-@property (nonatomic, strong)NSTask *linrgTask;
+@property (nonatomic, strong)NSNumber *currSlope;
+@property (nonatomic, strong)NSNumber *currIntercept;
 
-@property (nonatomic, strong)NSNumber *slope;
-@property (nonatomic, strong)NSNumber *intercept;
-@property (nonatomic, strong)NSNumber *correlation;
-
-
-- (BOOL)canCompute;
-- (IBAction)computeWithLinrg:(id)sender;
+- (IBAction)computeWithLibrary:(id)sender;
+- (IBAction)showGraphWindow:(id)sender;
 - (IBAction)saveAsPList:(id)sender;
 - (IBAction)loadPlist:(id)sender;
-- (void)dataRead:(NSNotification *)aNotice;
 
 
 @end

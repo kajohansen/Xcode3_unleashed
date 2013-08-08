@@ -13,16 +13,18 @@
 @synthesize x, y;
 
 - (id) init {
+    self = [super init];
 	return [self initWithX: 0.0 Y: 0.0];
 }
 
 - (id)initWithX:(double)xValue Y:(double)yValue {
+    self = [super init];
     
     NSNumber *initX = [[NSNumber alloc] initWithDouble:xValue];
     NSNumber *initY = [[NSNumber alloc] initWithDouble:yValue];
     
-	x = initX;
-	y = initY;
+	self.x = initX;
+	self.y = initY;
 	
     return self;
 }
